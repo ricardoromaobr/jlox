@@ -1,0 +1,8 @@
+var nome = "ricardo";
+
+fun imprimeNome() {
+    print nome;
+}
+
+imprimeNome();
+
