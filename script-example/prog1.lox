@@ -1,8 +1,15 @@
-var nome = "ricardo";
+class Pessoa {
 
-fun imprimeNome() {
-    print nome;
+    validaNome() {
+
+        if (this.idade == 0)
+            print "idade  não definido";
+        if (this.nome == nil)
+           print "nome não definido!";
+    }
 }
 
-imprimeNome();
-
+var pessoa = Pessoa();
+pessoa.nome = "ricardo";
+pessoa.idade = 48;
+pessoa.validaNome();
