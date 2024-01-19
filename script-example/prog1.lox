@@ -1,15 +1,26 @@
-class Pessoa {
-
-    validaNome() {
-
-        if (this.idade == 0)
-            print "idade  não definido";
-        if (this.nome == nil)
-           print "nome não definido!";
+class Animal {
+    falar () {
+        print "um animal!";
+        print super.falar();
     }
 }
 
-var pessoa = Pessoa();
-pessoa.nome = "ricardo";
-pessoa.idade = 48;
-pessoa.validaNome();
+class Cachorro < Animal {
+   falar () {
+       print "Auau!";
+   }
+}
+
+class PastorAlemao < Cachorro {
+    falar () {
+        super.falar();
+    }
+}
+
+class Gato < Animal {
+    falar() {
+        print "Miau!";
+    }
+}
+
+PastorAlemao().falar();
